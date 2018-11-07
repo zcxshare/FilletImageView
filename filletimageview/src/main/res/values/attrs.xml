@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FilletImageView">
+        <attr name="fiv_border_width" format="dimension" />
+        <attr name="fiv_border_color" format="color" />
+        <attr name="fiv_border_overlay" format="boolean" />
+        <!-- {@deprecated Use civ_circlebackground_color instead.} -->
+        <attr name="fiv_fill_color" format="color" />
+        <attr name="fiv_circle_background_color" format="color" />
+        <attr name="fiv_radius" format="dimension" />
+    </declare-styleable>
+</resources>

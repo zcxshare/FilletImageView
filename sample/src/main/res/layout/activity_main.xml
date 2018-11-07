@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/rl_top_left"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/light"
+            android:padding="@dimen/base_padding">
+
+            <com.zcx.filletimageview.FilletImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:src="@drawable/hugh"
+                app:fiv_border_color="@color/dark"
+                app:fiv_border_width="2dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/rl_top_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/dark"
+            android:padding="@dimen/base_padding">
+
+            <com.zcx.filletimageview.FilletImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hugh"
+                app:fiv_border_color="@color/light"
+                app:fiv_border_width="2dp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/dark"
+            android:padding="@dimen/base_padding">
+
+            <com.zcx.filletimageview.FilletImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:src="@drawable/hugh"
+                app:fiv_border_color="@color/light"
+                app:fiv_border_width="2dp"
+                app:fiv_radius="10dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_top_right"
+            android:layout_weight="1"
+            android:background="@color/light"
+            android:padding="@dimen/base_padding">
+
+            <com.zcx.filletimageview.FilletImageView
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:src="@drawable/hugh"
+                app:fiv_border_color="@color/dark"
+                app:fiv_border_width="2dp"
+                app:fiv_radius="10dp" />
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>
